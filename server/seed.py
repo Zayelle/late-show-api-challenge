@@ -1,4 +1,5 @@
-from server.app import app, db
+from server.app import app
+from server.models import db
 from server.models.user import User
 from server.models.guest import Guest
 from server.models.episode import Episode
@@ -8,10 +9,10 @@ from werkzeug.security import generate_password_hash
 
 with app.app_context():
     print("🧹 Clearing existing data...")
-    Appearance.query.delete()
-    Guest.query.delete()
-    Episode.query.delete()
-    User.query.delete()
+    db.session.query(Appearance).delete()
+    db.session.query(Guest).delete()
+    db.session.query(Episode).delete()
+    db.session.query(User).delete()
 
     print("🌱 Seeding users...")
     user1 = User(username="admin", password_hash=generate_password_hash("password123"))
