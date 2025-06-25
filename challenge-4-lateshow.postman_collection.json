@@ -21,7 +21,7 @@
                     "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password123\"\n}"
                 },
                 "url": {
-                    "raw": "http://localhost:5000/register",
+                    "raw": "http://localhost:5000/auth/register",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -48,7 +48,7 @@
                     "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"password123\"\n}"
                 },
                 "url": {
-                    "raw": "http://localhost:5000/login",
+                    "raw": "http://localhost:5000/auth/login",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -65,7 +65,7 @@
             "request": {
                 "method": "GET",
                 "url": {
-                    "raw": "http://localhost:5000/episodes",
+                    "raw": "http://localhost:5000/episodes/episodes",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -82,7 +82,7 @@
             "request": {
                 "method": "GET",
                 "url": {
-                    "raw": "http://localhost:5000/episodes/1",
+                    "raw": "http://localhost:5000/episodes/episodes/1",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -106,7 +106,7 @@
                     }
                 ],
                 "url": {
-                    "raw": "http://localhost:5000/episodes/1",
+                    "raw": "http://localhost:5000/episodes/episodes/1",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -124,7 +124,7 @@
             "request": {
                 "method": "GET",
                 "url": {
-                    "raw": "http://localhost:5000/guests",
+                    "raw": "http://localhost:5000/guests/guests",
                     "protocol": "http",
                     "host": [
                         "localhost"
@@ -155,7 +155,7 @@
                     "raw": "{\n    \"guest_id\": 1,\n    \"episode_id\": 2,\n    \"rating\": 5\n}"
                 },
                 "url": {
-                    "raw": "http://localhost:5000/appearances",
+                    "raw": "http://localhost:5000/appearances/appearances",
                     "protocol": "http",
                     "host": [
                         "localhost"
